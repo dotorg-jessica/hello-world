@@ -8,3 +8,6 @@ jobs:
       - uses: actions/setup-node@v1
       - run: npm install -g bats
       - run: bats -v
+      # Add a new step in this current workflow. Did I do this correctly?
+      - name: Setup Node.js environment 
+      - uses: actions/setup-node@v2.1.4
